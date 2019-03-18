@@ -7,13 +7,13 @@
 为了适应知识背景薄弱的读者，此文相对于其它类似资料较为冗余，所以还请谅解！
 
 ### 目录
-* [什么是进制](#什么是进制)
-* [二进制的计数原理与基本运算](#二进制的计数原理与基本运算)
-* [二进制与十进制间的转换方法](#二进制与十进制间的转换方法)
-* [十六进制的计数原理与基本运算](#十六进制的计数原理与基本运算)
-* [十六进制与十进制及二进制间的转换方法](#十六进制与十进制及二进制间的转换方法)
-* [任意进制的计数原理及表达方法与基本运算](#任意进制的计数原理及表达方法与基本运算)
-* [任意进制间的转换方法](#任意进制间的转换方法)
+* [什么是进制](#shen-me-shi-jin-zhi)
+* [二进制的计数原理与基本运算](#er-jin-zhi-de-ji-shu-yuan-li-yu-ji-ben-yun-suan)
+* [二进制与十进制间的转换方法](#er-jin-zhi-yu-shi-jin-zhi-jian-de-zhuan-huan-fang-fa)
+* [十六进制的计数原理与基本运算](#shi-liu-jin-zhi-de-ji-shu-yuan-li-yu-ji-ben-yun-suan)
+* [十六进制与十进制及二进制间的转换方法](#shi-liu-jin-zhi-yu-shi-jin-zhi-ji-er-jin-zhi-jian-de-zhuan-huan-fang-fa)
+* [任意进制的计数原理及表达方法与基本运算](#ren-yi-jin-zhi-de-ji-shu-yuan-li-ji-biao-da-fang-fa-yu-ji-ben-yun-suan)
+* [任意进制间的转换方法](#ren-yi-jin-zhi-jian-de-zhuan-huan-fang-fa)
 
 
 ***
