@@ -8,11 +8,12 @@
 
 > 此索引原本位于 [MCBBS](http://www.mcbbs.net/thread-492527-1-1.html)，为方便跳转而创建。一般情况下，此索引与位于 MCBBS 的索引同步更新，但大部分内容将只放在 Github。
 
+> 请访问 [GitBook](https://langyo-china.gitbook.io/rsct/) 以进入阅读。
 
 ***
 
 
-## [“0”与“1”](https://langyo.github.io/redstone-computer-techiology/%E2%80%9C0%E2%80%9D%E4%B8%8E%E2%80%9C1%E2%80%9D)
+## [“0”与“1”](https://langyo-china.gitbook.io/rsct/0-yu-1)
 “0”与“1”，两个平凡的数字，因为计算机的出现而熠熠生辉，支持着信息时代的发展。“0”与“1”属于二进制，而计算机内部的奥秘便与二进制息息相关。
 
 学习有关进制的知识，对进一步学习计算机的内部结构会起到很大的作用。
@@ -26,7 +27,7 @@
 * [任意进制的计数原理、表达方法与基本运算](https://langyo.github.io/redstone-computer-techiology/%E2%80%9C0%E2%80%9D%E4%B8%8E%E2%80%9C1%E2%80%9D#%E4%BB%BB%E6%84%8F%E8%BF%9B%E5%88%B6%E7%9A%84%E8%AE%A1%E6%95%B0%E5%8E%9F%E7%90%86%E5%8F%8A%E8%A1%A8%E8%BE%BE%E6%96%B9%E6%B3%95%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97)
 * [任意进制间的转换方法](https://langyo.github.io/redstone-computer-techiology/%E2%80%9C0%E2%80%9D%E4%B8%8E%E2%80%9C1%E2%80%9D#%E4%BB%BB%E6%84%8F%E8%BF%9B%E5%88%B6%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2%E6%96%B9%E6%B3%95)
 
-## [表达信息](https://langyo.github.io/redstone-computer-techiology/%E8%A1%A8%E8%BE%BE%E4%BF%A1%E6%81%AF)
+## [表达信息](https://langyo-china.gitbook.io/rsct/biao-da-xin-xi)
 计算机有着自己的语言。无论是不断变化着电压高低的电信号，还是经过一定转换得到的一串又一串的二进制数字，都需要为其定制一些编码方法。能够正确地表达信息，是计算机能够处理信息的必备条件之一。接下来，我们便开始了解一些最基础的有关信息本身的奥秘。
 
 此章节的目录：
