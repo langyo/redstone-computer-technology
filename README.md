@@ -1,4 +1,4 @@
-# 红石计算机资料库索引
+# 索引
 
 大家好，我是 langyo。
 
@@ -7,18 +7,17 @@
 才疏学浅，还望技术大牛们指正！
 
 > 此索引原本位于 [MCBBS](http://www.mcbbs.net/thread-492527-1-1.html)，为方便跳转而创建。一般情况下，此索引与位于 MCBBS 的索引同步更新，但大部分内容将只放在 Github。
-
+>
 > 请访问 [GitBook](https://langyo-china.gitbook.io/rsct/) 以进入阅读。
 
-***
-
-
 ## [“0”与“1”](https://langyo.gitbook.io/rsct/part1)
+
 “0”与“1”，两个平凡的数字，因为计算机的出现而熠熠生辉，支持着信息时代的发展。“0”与“1”属于二进制，而计算机内部的奥秘便与二进制息息相关。
 
 学习有关进制的知识，对进一步学习计算机的内部结构会起到很大的作用。
 
 此章节的目录：
+
 * [什么是进制](https://langyo.gitbook.io/rsct/part1#shen-me-shi-jin-zhi)
 * [二进制的计数原理与基本运算](https://langyo.gitbook.io/rsct/part1#er-jin-zhi-de-ji-shu-yuan-li-yu-ji-ben-yun-suan)
 * [二进制与十进制间的转换方法](https://langyo.gitbook.io/rsct/part1#er-jin-zhi-yu-shi-jin-zhi-jian-de-zhuan-huan-fang-fa)
@@ -28,9 +27,11 @@
 * [任意进制间的转换方法](https://langyo.gitbook.io/rsct/part1#ren-yi-jin-zhi-jian-de-zhuan-huan-fang-fa)
 
 ## [表达信息](https://langyo.gitbook.io/rsct/part2)
+
 计算机有着自己的语言。无论是不断变化着电压高低的电信号，还是经过一定转换得到的一串又一串的二进制数字，都需要为其定制一些编码方法。能够正确地表达信息，是计算机能够处理信息的必备条件之一。接下来，我们便开始了解一些最基础的有关信息本身的奥秘。
 
 此章节的目录：
+
 * [什么是信息](https://langyo.gitbook.io/rsct/part2#shen-me-shi-xin-xi)
 * [字长与大端序、小端序](https://langyo.gitbook.io/rsct/part2#zi-chang-yu-da-duan-xu-xiao-duan-xu)
 * [字符编码与 BCD 码](https://langyo.gitbook.io/rsct/part2#zi-fu-bian-ma-yu-bcd-ma)
@@ -38,6 +39,7 @@
 * [定点数与浮点数](https://langyo.gitbook.io/rsct/part2#ding-dian-shu-yu-fu-dian-shu)
 
 ## [你好，红石！](https://langyo.gitbook.io/rsct/part3)
+
 > 正在编辑
 
 红石电路是 Minecraft 的一大游戏特色。它模拟了现实中的一些电气元件，使得我们可以在游戏中建造各种各样的“电路”。依据应用方向与方式的不同，可以将具体的红石电路分为机械电路、模拟电路与数字电路三大类。
@@ -49,6 +51,7 @@
 > 此章节将同时在 Github 与 MCBBS 发布。
 
 此章节的目录：
+
 * [红石的本质](https://langyo.gitbook.io/rsct/part3#红石的本质)
 * [红石的搭档们](https://langyo.gitbook.io/rsct/part3#红石的搭档们)
 * [机械电路——用活塞推动世界](https://langyo.gitbook.io/rsct/part3#机械电路——用活塞推动世界)
@@ -71,3 +74,4 @@
 了解操作系统最核心的原理，可以反过来指导红石计算机的硬件部分如何改进，使其真正从一个“计算器”蜕变成一个“计算机”。
 
 > 待编辑
+
