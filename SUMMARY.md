@@ -16,4 +16,4 @@
 * [SMM 体系探索](part13.md)
 * [FPU 简介](part14.md)
 * [模拟信号运算](part15.md)
-
+* [Verilog HDL 语言快速入门](part16.md)
