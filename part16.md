@@ -1,3 +1,33 @@
+# Verilog HDL 语言快速入门
+
+用手画 CPU 早已是过去的事情了。为了制作超大规模的集成电路，人们开发了一系列的硬件描述语言，以计算机辅助人们生成需要的 HDL 电路。Verilog HDL 便是其中之一，它早已流行于各个芯片大厂中，成为信息技术在硬件方面的得力助手。如果想了解现代计算机的运作原理，除了需要大量的理论知识外，还需要的便是能看懂以这种语言描绘的电路。
+
+阅读本文，您需要一定的编程基础。您可以通过学习本索引的姊妹篇[这是 C++ 的世界！](https://langyo-v2.gitbook.io/cppworld/)来快速入门，然后再回到本篇文章继续学习，会轻松很多。
+
+本文实际上是一则笔记，不能完整地教授您有关 Verilog HDL 的全部语法知识，仅仅能起到快速入门、能基本看懂他人以 Verilog HDL 写成的芯片电路逻辑的作用。
+
+### 目录
+
+* [基本概念](part16.md#ji-ben-gai-nian)
+* [模块](part16.md#mo-kuai)
+* [模块实例化](part16.md#mo-kuai-shi-li-hua)
+* [常数值与常量](part16.md#chang-shu-zhi-yu-chang-liang)
+* [变量](part16.md#bian-liang)
+* [标识符](part16.md#biao-shi-fu)
+* [注释](part16.md#zhu-shi)
+* [赋值](part16.md#fu-zhi)
+* [默认网络类型](part16.md#mo-ren-wang-luo-lei-xing)
+* [运算符](part16.md#yun-suan-fu)
+* [条件判断](part16.md#tiao-jian-pan-duan)
+* [always过程块](part16.md#always-guo-cheng-kuai)
+* [分支选择](part16.md#fen-zhi-xuan-ze)
+* [预处理](part16.md#yu-chu-li)
+* [正逻辑与负逻辑](part16.md#zheng-luo-ji-yu-fu-luo-ji)
+* [电路仿真](part16.md#dian-lu-fang-zhen)
+* [模拟时钟](part16.md#mo-ni-shi-zhong)
+* [系统任务](part16.md#xi-tong-ren-wu)
+* [IcarusVerilog仿真程序的使用](part16.md#IcrausVerilog-fang-zhen-cheng-xu-de-shi-yong)
+
 ## 基本概念
 
 Verilog HDL 是一种 HDL 语言（Hardware Description Language，硬件描述语言）。使用此类语言可以进行抽象度较高的 RTL（Register Transfer Level，寄存器传输级）电路的设计，是在当代设计 CPU 这类超大规模逻辑电路最好的选择。RTL 是根据寄存器间的信号流动和电路逻辑来记述电路动作的一种设计模型。
@@ -51,7 +81,7 @@ adder adder1(
 );
 ```
 
-## 常数值
+## 常数值与常量
 
 这个语言没有定义诸如 true、false、nil、null 这类关键字，而是直接用数字表达逻辑值，简单又直接。数字 0 和 1 分别代表低电平与高电平，也分别代表逻辑假和逻辑真。一定要记住这两个数字在硬件设计语言中的逻辑意义，因为它们与我们日常使用的绝大部分计算机编程语言的含义是正好相反的！
 
@@ -66,9 +96,33 @@ adder adder1(
 具体示例：
 
 > 6'b111100
+>
 > 6'o74
+>
 > 6'd60
+>
 > 6'h3c
+
+另外，这个语言也能定义常量。强烈建议不要往程序中使用魔数（Magic Number，即直接写意义不明的数字），因为那样会让电路描述变得晦涩难懂、难以维护。常量本质上也是常数值数字，但它以一个有意义的名字代替了这个数字，从而提升电路描述的可读性，并且也易于维护。
+
+它的定义格式如下：
+
+````define XXX XXX```
+
+前一个为这个常量的名字，后一个为你要定义的值，可以为任意的常数值。
+
+定义完成后，就可以使用了：
+
+````XXX```
+
+直接将这种格式的文本写进表达式就可以了。
+
+例如：
+
+```verilog
+`define A 1
+reg n = `A;
+```
 
 ## 变量
 
@@ -139,3 +193,22 @@ adder adder1(
 ```reg a, b, c;```
 
 ## 标识符
+
+标识符是为变量、模块等取名时使用的名字。它是一连串的字符，而不是单个字符。
+
+标识符仅可由大小写字母(a-z, A-Z)、数字(0-9)、下划线(_)与美元符号($)组成。
+
+## 注释
+
+单行注释：
+
+```// ...```
+
+多行（块状）注释：
+
+```verilog
+/*
+  ...
+ */
+```
+

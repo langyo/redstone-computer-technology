@@ -8,7 +8,7 @@
 
 > 此索引原本位于 [MCBBS](http://www.mcbbs.net/thread-492527-1-1.html)，为方便跳转而创建。一般情况下，此索引与位于 MCBBS 的索引同步更新，但大部分内容将只放在 Github。
 >
-> 请访问 [GitBook](https://langyo-china.gitbook.io/rsct/) 以进入阅读。
+> 请访问 [GitBook](https://langyo.gitbook.io/rsct/) 以进入阅读。
 
 ## [“0”与“1”](https://langyo.gitbook.io/rsct/part1)
 
