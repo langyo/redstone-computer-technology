@@ -664,3 +664,55 @@ mem[3]: 11111111
 - ```dumpvars(begin_tick, module_or_wire)```
 
 指定某个模块中的所有线路或某根具体的线路/寄存器的信号波形输出到由 ```$dumpfile``` 指定的文件中。
+
+## parameter 类型
+
+这个类型有点像 C 语言的常量类型，但它仅适用于仿真模块。例如：
+
+```verilog
+parameter STEP = 100.0000;
+#(STEP / 2) begin
+   ...
+end
+```
+
+## Icarus Verilog 仿真程序的使用
+
+Icarus Verilog 是一个 CLI，你可以通过对其输入命令行参数控制其具体的仿真行为细节。
+
+Icarus Verilog 的安装程序会自动将已安装程序的路径加入到环境变量中。如果安装后 iverilog 命令无法正常执行（提示没有此程序），那么您应当检查并手动设置此部分的内容。
+
+此 CLI 有以下选项参数：
+
+- -D *macro* *\[=defn\]*
+
+定义一个名为```macro```的宏，值为```defn```。如果未指定```defn```，将自动使用默认值 1。
+
+- -l *includedir*
+
+将```includedir```指向的路径加入进 include 语句包含文件时的搜索路径列表中。
+
+- -o *filename*
+
+指定仿真输出的文件名。
+
+- -s *topmodule*
+
+指定最顶层（相当于```main```）模块的名称。
+
+- -y *libdir*
+
+将```libdir```指向的路径加入进库文件的搜索路径列表中。
+
+
+示例指令：
+
+```
+iverilog -s regfile test -o regfile test.out regfile test.v regfile.v
+vvp regfile test.out
+```
+
+其中，```iverilog```用于生成编译后的电路文件（test.out），后续的```vvp```指令则用于执行仿真部分，并生成最终可用的波形文件。
+
+要查看波形文件，可以使用软件 GTKWave。
+
